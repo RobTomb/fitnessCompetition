@@ -1,4 +1,3 @@
-
 function narcissus(num) {
 	num = num + '';
 	let sum = 0 ;
