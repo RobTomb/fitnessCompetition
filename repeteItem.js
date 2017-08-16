@@ -5,7 +5,7 @@
 
 function repeteItem(arr) {
 	let result = [];
-	arr.forEach( (element,index,array)=>{
+	arr.forEach( (element)=>{
 		if( arr.indexOf(element) !== arr.lastIndexOf(element) && !result.includes(element) )
 			result.push(element);
 	})
