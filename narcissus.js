@@ -1,10 +1,10 @@
 function narcissus(num) {
-	num = num + '';
-	let sum = 0 ;
-	for (let i = 0; i < num.length; i++) {
-		sum += Math.pow(parseInt(num[i]) , 3);
-	}
-	return sum === parseInt(num);
+
+	let numList = (num + '').split('').map( (item) => parseInt(item) );
+
+	return numList.reduce( (sum , item) =>{
+		return sum += Math.pow(item , 3);
+	} , 0) === parseInt(num);
 }
 
 function loop1000(){

@@ -4,11 +4,7 @@ eg: function findNum(arr){ ... }
  */
 
 function findNum(arr) {
-	for (var i = 0; i < arr.length; i++) {
-		if( arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i]) )
-			return arr[i];
-	}
-	return false;
+  return arr.filter( (item)=> arr.indexOf(item) === arr.lastIndexOf(item) )[0];
 }
 
 

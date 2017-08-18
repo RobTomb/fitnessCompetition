@@ -4,9 +4,7 @@ function XXX(str,val){}
 */
 
 function leftLink(str , val) {
-	str = str.split('->');
-	str = str.filter( (item)=>{ return item !== val.toString()});
-	return str = str.join('->');
+	return str.split('->').filter( (item)=> item !== val.toString() ).join('->');
 }
 
 console.log(leftLink('1->2->3->3->4->5->3',3));

@@ -10,4 +10,4 @@ function findIndex(arr , item) {
 			console.log(index);
 	})
 }
-findIndex([1, 3, 7, 1 ,4] , 1)
+findIndex([1, 3, 7, 1 ,4] , 1);
