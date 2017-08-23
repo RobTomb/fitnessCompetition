@@ -18,3 +18,4 @@ function countSameItem(str) {
 }
 
 console.log(countSameItem('aaaaabbdbdbb'));
+console.log(countSameItem('abcsbaddbizdbas'));
